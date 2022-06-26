@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  docker_benchmark:
+    image: ${IMAGE_NAME}
+    container_name: ${CONTAINER_NAME}
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./scripts:/home
