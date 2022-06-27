@@ -15,4 +15,6 @@ Docker DesktopのファイルIOが遅いことを確認するためのもの
 make init # コンテナの立ち上げ
 make bash # コンテナ内に入る
 python check_spped_test.py
+exit #　コンテナ内から出る場合
+make down # コンテナを落とす
 ```
